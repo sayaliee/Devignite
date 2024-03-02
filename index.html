@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* General styles */
+        /* *{
+    margin:0;
+    padding: 0;
+} */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+
+        }
+
+        /* .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+} */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+        }
+
+        #start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .navbar .logo img {
+            width: 100px;
+            /* Adjust as needed */
+            height: auto;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .links {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        /* Round button styles */
+        .round-button {
+            border-radius: 20px;
+        }
+
+        .signin,
+        .signup {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .navbar .logo img {
+                width: 80px;
+                /* Adjust as needed */
+            }
+
+            .navbar .links {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+        }
+
+        #start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="your_logo_url_here" alt="Logo">
+            </div>
+            <div class="links">
+                <a href="about_us.html" target="_blank">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="actions">
+                <a class="signin round-button" href="#signin">Sign In</a>
+                <a class="signup round-button" href="#signup">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 16px;">
+        <h2>Ever growing charging network in India</h2>
+        <p>With 7000+ charging stations across the country, you can rest assured that we will have your journey covered.
+            We also offer 24x7 emergency charging support in five cities as part of our seamless charging experience.
+        </p>
+    </div>
+    <main>
+        <!-- <div class="container">
+      <div class="form-input">
+        <label for="start-location">Starting Location:</label>
+        <input type="text" id="start-location" placeholder="Enter starting location">
+      </div>
+      
+      <div class="form-input">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" placeholder="Enter destination">
+      </div>
+  
+      <button id="start-button">Start Navigation</button>
+    </div> -->
+        <div class="container" style="display: flex; justify-content: space-around;">
+            <div class="form-input" style="width: 50%;">
+                <label for="start-location">Starting Location:</label>
+                <input type="text" id="start-location" placeholder="Enter starting location">
+                <br><br><br>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="Enter destination">
+                <br><br><br>
+                <button id="start-button">Start Navigation</button>
+            </div>
+
+            <div id="map-container" style="width: 50%;">
+                <iframe id="iframe-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3541.349956570171!2d-97.7430603849119!3d30.267153279857754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b50d22efb225%3A0x130e377354f7a33b!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1646948121900!5m2!1sen!2sin"
+                    frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- <script>
+  document.getElementById('start-button').addEventListener('click', function() {
+    var startLocation = document.getElementById('start-location').value;
+    var destination = document.getElementById('destination').value;
+    
+    // Check if start location and destination are provided
+    if (startLocation.trim() === '' || destination.trim() === '') {
+      alert('Please enter start location and destination.');
+      return;
+    }
+    
+    // Open Google Maps with the provided start location and destination
+    var url = 'https://www.google.com/maps/dir/' + encodeURIComponent(startLocation) + '/' + encodeURIComponent(destination);
+    window.open(url, '_blank');
+  });
+  </script> -->
+    <script>
+        document.getElementById('start-button').addEventListener('click', function () {
+            var startLocation = document.getElementById('start-location').value;
+            var destination = document.getElementById('destination').value;
+
+            // Check if start location and destination are provided
+            if (startLocation.trim() === '' || destination.trim() === '') {
+                alert('Please enter start location and destination.');
+                return;
+            }
+
+            // Open Google Maps with the provided start location and destination
+            // var url = 'https://www.google.com/maps/dir/' + encodeURIComponent(startLocation) + '/' + encodeURIComponent(destination);
+            // window.open(url, '_blank');
+            // var url = 'https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=' + encodeURIComponent(startLocation) + '&destination=' + encodeURIComponent(destination);
+            var url = 'https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=' + encodeURIComponent(startLocation) + '&destination=' + encodeURIComponent(destination);
+            document.getElementById('iframe-map').src = url;
+        });
+    </script>
+</body>
+
+</html>
