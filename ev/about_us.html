@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Added a light background color */
+}
+
+.container {
+    max-width: 900px; /* Set maximum width to improve readability */
+    margin: 0 auto;
+    padding: 0 20px; /* Added padding to container */
+}
+
+header {
+    background-color: #14426a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px; /* Added margin at the bottom of the header */
+    border-bottom: 2px solid #0e2b44; /* Darkened the header border */
+}
+
+main {
+    margin-bottom: 50px; /* Added margin at the bottom of the main content */
+}
+
+section {
+    margin-bottom: 40px; /* Increased margin-bottom for sections */
+    opacity: 0; /* Set initial opacity to 0 for animation */
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Add a slight vertical offset */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Optional: Reset the vertical offset */
+    }
+}
+
+h1 {
+    margin-bottom: 20px; /* Increased margin-bottom for headings */
+    color: #14426a; /* Changed heading color to match the theme */
+    font-size: 32px; /* Increased font size for the main heading */
+}
+
+h2 {
+    margin-bottom: 10px; /* Increased margin-bottom for headings */
+    color: #14426a; /* Changed heading color to match the theme */
+    font-size: 24px; /* Increased font size for the subheadings */
+    text-align: center; /* Centered the heading */
+}
+
+p {
+    line-height: 1.6; /* Improved line spacing for paragraphs */
+    font-size: 18px; /* Increased font size for paragraphs */
+}
+
+footer {
+    background-color: #14426a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Adjusted padding for footer */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reduced container padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Decreased heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Decreased subheading size for smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Decreased font size for paragraphs on smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+    
+</header>
+
+<main>
+    <section>
+        <h2>Vision</h2>
+        <p>To pioneer sustainable transportation solutions through innovative route planning technology, empowering electric vehicle drivers worldwide to navigate efficiently, confidently, and with minimal environmental impact.</p>
+    </section>
+
+    <section>
+        <h2>Mission</h2>
+        <p>Our mission is to revolutionize the electric vehicle experience by developing and deploying the most advanced route optimization system tailored specifically for EVs. Through relentless innovation and collaboration, we aim to provide drivers with seamless navigation, optimize energy usage, and contribute to the widespread adoption of clean transportation, ultimately leading to a greener and more sustainable future</p>
+    </section>
+</main>
+
+<footer>
+    <p>Contact us at: sparkstreet@gmail.com</p>
+</footer>
+
+</body>
+</html>

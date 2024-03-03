@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 2px solid #ccc; /* Changed border size */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Layout for form and iframe */
+.form-container {
+    margin-top: 200px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #ddd; /* Changed border size */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    animation-name: slideIn; /* Name of the animation */
+    animation-duration: 0.5s; /* Duration of the animation */
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px); /* Start position of the animation */
+        opacity: 0; /* Start opacity */
+    }
+    to {
+        transform: translateY(0); /* End position of the animation */
+        opacity: 1; /* End opacity */
+    }
+}
+.container {
+    max-width: 600px; /* Optional: Limit the maximum width of the form */
+    margin: 0 auto; /* Optional: Center the form horizontally */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Optional: Add margin between form groups */
+}
+
+label {
+    display: block; /* Optional: Make labels block-level for better spacing */
+}
+.iframe-container {
+    margin-top: 100px;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 5px;
+}
+/* Add this style to change color of active link */
+.active {
+    color: blue;
+}
